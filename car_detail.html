@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Tripathi Cars</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <script src="https://kit.fontawesome.com/4024bb9e8c.js" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="base.css">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+         <div class="container">
+            <!-- Insert Logo Here -->
+            <a class="navbar-brand">Tripathi Cars (Logo)</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link text-light mx-2" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-light mx-2" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-light mx-2" href="#">Cars</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-light mx-2" href="#">Sold Cars</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-light mx-2" href="#">Contact Us</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Brand Slider -->
+      <div class="container col-md-12">
+         <div class="scroller" data-speed="fast">
+            <ul class="tag-list scroller__inner">
+               <li>Sulav</li>
+               <li>Bhandari</li>
+               <li>Toyota</li>
+               <li>Honda</li>
+               <li>BMW</li>
+               <li>Mercedes-Benz</li>
+               <li>Audi</li>
+               <li>Nissan</li>
+               <li>Hyundai</li>
+               <li>Kia</li>
+               <li>Volvo</li>
+               <li>Volkswagen</li>
+               <li>Porsche</li>
+               <li>Jaguar</li>
+            </ul>
+         </div>
+      </div>
+      <!-- Cars Details Section -->
+      <!-- Row to place Image Container and Summary Box in the same row -->
+      <div class="container">
+         <div class="row">
+            <!-- Image Container -->
+            <div class="col-md-7 mt-4 rounded-container">
+               <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img src="../car_images/car_1.jpg" class="d-block w-100" alt="Image 1">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="../car_images/car_2.jpg" class="d-block w-100" alt="Image 2">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="../car_images/car_3.jpg" class="d-block w-100" alt="Image 3">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="../car_images/car_4.jpg" class="d-block w-100" alt="Image 4">
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#imageCarousel" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#imageCarousel" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                  </a>
+               </div>
+            </div>
+            <!-- Summary Box -->
+            <div class="col-md-4 mt-4 rounded-container-right">
+               <h3 id="product-title"><strong> MG Hector Plus Sharp DCT </strong></h3>
+               <span>28,000 kms • Petrol • Automatic • 1st Owner</span>
+               <h4><strong>NRs 1,00,000</strong></h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum laborum, cupiditate error,
+                  atque voluptates vero fugiat sint quibusdam nihil optio culpa at expedita sunt dolores explicabo non ut molestiae a.
+               </p>
+               <ul>
+                  <li>Feature 1</li>
+                  <li>Feature 2</li>
+                  <li>Feature 3</li>
+                  <li>Feature 4</li>
+                  <li>Feature 5</li>
+                  <li>Feature 6</li>
+                  <li>Feature 7</li>
+                  <li>Feature 8</li>
+                  <li>Feature 9</li>
+               </ul>
+               <h5>Send us your enquiry through:</h5>
+               <button class="enquiry-button" onclick="sendMessengerMessage()"><i class="fa-brands fa-facebook-messenger"></i> Messenger</button>
+               <button class="enquiry-button" onclick="sendWhatsappMessage()"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+            </div>
+         </div>
+         <!-- Car Overview -->
+         <div class="container mt-4">
+            <div class="card">
+               <div class="card-body">
+                  <h4 class="card-title"><strong>Car Overview</strong></h4>
+                  <ul class="list-group list-group-flush">
+                     <li class="list-group-item d-flex justify-content-between">
+                        <strong>Registration Year:</strong>
+                        <span>Jan 2021</span>
+                     </li>
+                     <li class="list-group-item d-flex justify-content-between">
+                        <strong>Insurance Validity:</strong>
+                        <span>Comprehensive</span>
+                     </li>
+                     <li class="list-group-item d-flex justify-content-between">
+                        <strong>Fuel Type:</strong>
+                        <span>Petrol</span>
+                     </li>
+                     <li class="list-group-item d-flex justify-content-between">
+                        <strong>Seats:</strong>
+                        <span>6 Seats</span>
+                     </li>
+                     <li class="list-group-item d-flex justify-content-between">
+                        <strong>Kms Driven:</strong>
+                        <span>28,000 Kms</span>
+                     </li>
+                     <li class="list-group-item d-flex justify-content-between">
+                        <strong>RTO:</strong>
+                        <span>UP78</span>
+                     </li>
+                     <li class="list-group-item d-flex justify-content-between">
+                        <strong>Ownership:</strong>
+                        <span>First Owner</span>
+                     </li>
+                     <li class="list-group-item d-flex justify-content-between">
+                        <strong>Engine Displacement:</strong>
+                        <span>1451 cc</span>
+                     </li>
+                     <li class="list-group-item d-flex justify-content-between">
+                        <strong>Transmission:</strong>
+                        <span>Automatic</span>
+                     </li>
+                     <li class="list-group-item d-flex justify-content-between">
+                        <strong>Year of Manufacture:</strong>
+                        <span>2020</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- Features Section -->
+         <div class="container mt-4">
+            <div class="card">
+               <div class="card-body">
+                  <h4 class="card-title"><strong>Features</strong></h4>
+                  <ul class="list-group list-group-flush">
+                     <li class="list-group-item d-flex justify-content-between btn btn-link" data-bs-toggle="collapse" data-bs-target="#interior-features" aria-expanded="true"">
+                        <strong>Interior Features</strong>
+                        <span>See All</span>
+                     </li>
+                     <li class="list-group-item d-flex justify-content-between btn btn-link" data-bs-toggle="collapse" data-bs-target="#comfort" aria-expanded="true"">
+                        <strong>Comfort & Convenience</strong>
+                        <span>See All</span>
+                     </li>
+                  </ul>
+                  <div id="interior-features" class="collapse show">
+                     <div class="card-body">
+                        <ul class = "responsive-list">
+                           <li>
+                              <div><span class="tick">&#10003;</span>Power Windows Front</div>
+                           </li>
+                           <li>
+                              <div><span class="tick">&#10003;</span>Power Windows Rear</div>
+                           </li>
+                           <li>
+                              <div><span class="tick">&#10003;</span>Leather Seats</div>
+                           </li>
+                           <li>
+                              <div><span class="tick">&#10003;</span>Leather Steering Wheel</div>
+                           </li>
+                           <li>
+                              <div><span class="tick">&#10003;</span>Radio</div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div id="comfort" class="collapse show">
+                     <div class="card-body">
+                        <ul class = "responsive-list">
+                           <li>
+                              <div><span class="tick">&#10003;</span>Power Windows Front</div>
+                           </li>
+                           <li>
+                              <div><span class="tick">&#10003;</span>Power Windows Rear</div>
+                           </li>
+                           <li>
+                              <div><span class="tick">&#10003;</span>Leather Seats</div>
+                           </li>
+                           <li>
+                              <div><span class="tick">&#10003;</span>Leather Steering Wheel</div>
+                           </li>
+                           <li>
+                              <div><span class="tick">&#10003;</span>Radio</div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Footer Section -->
+    <footer class="bg-dark text-light mt-4">
+        <div class="container py-4">
+            <div class="row">
+                <!-- Social Media Links -->
+                <div class="col-md-4">
+                    <h5>Social Media</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa-brands fa-tiktok"></i> Tiktok</a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+                <!-- Maps -->
+                <div class="col-md-4">
+                    <h5>Visit Us</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.1757600313294!2d85.30008337511094!3d27.680962126655302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19d11ec056b9%3A0xffcc4ffbd640471f!2sTripathi%20and%20Brothers%20Automobiles%20Private%20limited!5e0!3m2!1sen!2snp!4v1698483153499!5m2!1sen!2snp" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- Company Name -->
+                <div class="col-md-4">
+                    <h5>Tripathi and Brothers Automobiles Private Limited</h5>    
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa-solid fa-phone"></i> +977-1234567890</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Mandatory Footer Elements -->
+        <div class="bg-danger text-light text-center py-2">
+            <p>&copy; 2023 Tripathi and Brothers Automobiles Private Limited</p>
+        </div>
+    </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-c6/1VVW0YqzJNU5SOoPRgaOZff5gj0TRG7fFzU"></script>
+      <script src="index.js"></script>
+   </body>
+</html>

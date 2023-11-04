@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tripathi Cars</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/4024bb9e8c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="base.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container">
+            <!-- Insert Logo Here -->
+            <a class="navbar-brand">Tripathi Cars (Logo)</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2" href="#">Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2" href="#">Sold Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Brand Slider -->
+    <div class="container col-md-12">
+        <div class="scroller" data-speed="fast">
+            <ul class="tag-list scroller__inner">
+                <li>Sulav</li>
+                <li>Bhandari</li>
+                <li>Toyota</li>
+                <li>Honda</li>
+                <li>BMW</li>
+                <li>Mercedes-Benz</li>
+                <li>Audi</li>
+                <li>Nissan</li>
+                <li>Hyundai</li>
+                <li>Kia</li>
+                <li>Volvo</li>
+                <li>Volkswagen</li>
+                <li>Porsche</li>
+                <li>Jaguar</li>
+            </ul>
+        </div> 
+    </div>  
+     <!-- Filter Box -->
+     <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container-box custom-dropdown">
+                    <div class="row">
+                        <div class="col-md-4 mb-2">
+                            <label for="brandDropdown">Select Brand:</label>
+                            <select class="form-select" id="brandDropdown">
+                                <option value="brand1">Brand 1</option>
+                                <option value="brand2">Brand 2</option>
+                                <option value="brand3">Brand 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <label for="variantDropdown">Select Variant:</label>
+                            <select class="form-select" id="variantDropdown">
+                                <option value="variant1">Variant 1</option>
+                                <option value="variant2">Variant 2</option>
+                                <option value="variant3">Variant 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <label for="yearDropdown">Select Make Year:</label>
+                            <select class="form-select" id="yearDropdown">
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3 text-center">
+                            <button class="btn btn-primary filter-button" id="filterButton" style="width: 50%;">Filter</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- Cars Section -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 mt-4">
+                <div class="product-card">
+                    <img class="product-image" src="../car_images/car_1.jpg" alt="Product Image">
+                    <div class="product-title">Product Name</div>
+                    <div class="product-brand">Transportation Type/Brand</div>
+                    <div class="product-price">Rs 9999</div>
+                    <div class="product-details">
+                        <div class="product-icons">
+                            <div class="icon">
+                                <i class="fas fa-car" style="color: red"></i> Brand Name
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-palette" style="color: #919098;"></i> White
+                            </div>
+                            <div class="icon ">
+                                <i class="fas fa-calendar"></i> 2010 
+                            </div>
+                            <div class="icon ">
+                                <i class="fas fa-car" style="color: red"></i> Brand Name
+                            </div>
+                            <div class="icon ">
+                                <i class="fa-solid fa-palette" style="color: #919098;"></i> White
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-calendar"></i> 2010 
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="enquiry-button m-1">Enquiry Now</button>
+                        <a href = "car_detail.html"><button class="details-button m-1">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="product-card">
+                    <img class="product-image" src="../car_images/car_2.jpg" alt="Product Image">
+                    <div class="product-title">Product Name</div>
+                    <div class="product-brand">Transportation Type/Brand</div>
+                    <div class="product-price">Rs 9999</div>
+                    <div class="product-details">
+                        <div class="product-icons">
+                            <div class="icon">
+                                <i class="fas fa-car" style="color: red"></i> Brand Name
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-palette" style="color: #919098;"></i> White
+                            </div>
+                            <div class="icon ">
+                                <i class="fas fa-calendar"></i> 2010 
+                            </div>
+                            <div class="icon ">
+                                <i class="fas fa-car" style="color: red"></i> Brand Name
+                            </div>
+                            <div class="icon ">
+                                <i class="fa-solid fa-palette" style="color: #919098;"></i> White
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-calendar"></i> 2010 
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="enquiry-button m-1">Enquiry Now</button>
+                        <a href = "car_detail.html"><button class="details-button m-1">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="product-card">
+                    <img class="product-image" src="../car_images/car_3.jpg" alt="Product Image">
+                    <div class="product-title">Product Name</div>
+                    <div class="product-brand">Transportation Type/Brand</div>
+                    <div class="product-price">Rs 9999</div>
+                    <div class="product-details">
+                        <div class="product-icons">
+                            <div class="icon">
+                                <i class="fas fa-car" style="color: red"></i> Brand Name
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-palette" style="color: #919098;"></i> White
+                            </div>
+                            <div class="icon ">
+                                <i class="fas fa-calendar"></i> 2010 
+                            </div>
+                            <div class="icon ">
+                                <i class="fas fa-car" style="color: red"></i> Brand Name
+                            </div>
+                            <div class="icon ">
+                                <i class="fa-solid fa-palette" style="color: #919098;"></i> White
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-calendar"></i> 2010 
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="enquiry-button m-1">Enquiry Now</button>
+                        <button class="details-button m-1">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="product-card">
+                    <img class="product-image" src="../car_images/car_4.jpg" alt="Product Image">
+                    <div class="product-title">Product Name</div>
+                    <div class="product-brand">Transportation Type/Brand</div>
+                    <div class="product-price">Rs 9999</div>
+                    <div class="product-details">
+                        <div class="product-icons">
+                            <div class="icon">
+                                <i class="fas fa-car" style="color: red"></i> Brand Name
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-palette" style="color: #919098;"></i> White
+                            </div>
+                            <div class="icon ">
+                                <i class="fas fa-calendar"></i> 2010 
+                            </div>
+                            <div class="icon ">
+                                <i class="fas fa-car" style="color: red"></i> Brand Name
+                            </div>
+                            <div class="icon ">
+                                <i class="fa-solid fa-palette" style="color: #919098;"></i> White
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-calendar"></i> 2010 
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="enquiry-button m-1">Enquiry Now</button>
+                        <button class="details-button m-1">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="product-card">
+                    <img class="product-image" src="../car_images/car_2.jpg" alt="Product Image">
+                    <div class="product-title">Product Name</div>
+                    <div class="product-brand">Transportation Type/Brand</div>
+                    <div class="product-price">Rs 9999</div>
+                    <div class="product-details">
+                        <div class="product-icons">
+                            <div class="icon">
+                                <i class="fas fa-car" style="color: red"></i> Brand Name
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-palette" style="color: #919098;"></i> White
+                            </div>
+                            <div class="icon ">
+                                <i class="fas fa-calendar"></i> 2010 
+                            </div>
+                            <div class="icon ">
+                                <i class="fas fa-car" style="color: red"></i> Brand Name
+                            </div>
+                            <div class="icon ">
+                                <i class="fa-solid fa-palette" style="color: #919098;"></i> White
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-calendar"></i> 2010 
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="enquiry-button m-1">Enquiry Now</button>
+                        <button class="details-button m-1">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="product-card">
+                    <img class="product-image" src="../car_images/car_3.jpg" alt="Product Image">
+                    <div class="product-title">Product Name</div>
+                    <div class="product-brand">Transportation Type/Brand</div>
+                    <div class="product-price">Rs 9999</div>
+                    <div class="product-details">
+                        <div class="product-icons">
+                            <div class="icon">
+                                <i class="fas fa-car" style="color: red"></i> Brand Name
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-palette" style="color: #919098;"></i> White
+                            </div>
+                            <div class="icon ">
+                                <i class="fas fa-calendar"></i> 2010 
+                            </div>
+                            <div class="icon ">
+                                <i class="fas fa-car" style="color: red"></i> Brand Name
+                            </div>
+                            <div class="icon ">
+                                <i class="fa-solid fa-palette" style="color: #919098;"></i> White
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-calendar"></i> 2010 
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="enquiry-button m-1">Enquiry Now</button>
+                        <button class="details-button m-1">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="product-card">
+                    <img class="product-image" src="../car_images/car_3.jpg" alt="Product Image">
+                    <div class="product-title">Product Name</div>
+                    <div class="product-brand">Transportation Type/Brand</div>
+                    <div class="product-price">Rs 9999</div>
+                    <div class="product-details">
+                        <div class="product-icons">
+                            <div class="icon">
+                                <i class="fas fa-car" style="color: red"></i> Brand Name
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-palette" style="color: #919098;"></i> White
+                            </div>
+                            <div class="icon ">
+                                <i class="fas fa-calendar"></i> 2010 
+                            </div>
+                            <div class="icon ">
+                                <i class="fas fa-car" style="color: red"></i> Brand Name
+                            </div>
+                            <div class="icon ">
+                                <i class="fa-solid fa-palette" style="color: #919098;"></i> White
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-calendar"></i> 2010 
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="enquiry-button m-1">Enquiry Now</button>
+                        <button class="details-button m-1">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- Footer Section -->
+      <footer class="bg-dark text-light mt-4">
+        <div class="container py-4">
+            <div class="row">
+                <!-- Social Media Links -->
+                <div class="col-md-4">
+                    <h5>Social Media</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa-brands fa-tiktok"></i> Tiktok</a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+                <!-- Maps -->
+                <div class="col-md-4">
+                    <h5>Visit Us</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.1757600313294!2d85.30008337511094!3d27.680962126655302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19d11ec056b9%3A0xffcc4ffbd640471f!2sTripathi%20and%20Brothers%20Automobiles%20Private%20limited!5e0!3m2!1sen!2snp!4v1698483153499!5m2!1sen!2snp" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- Company Name -->
+                <div class="col-md-4">
+                    <h5>Tripathi and Brothers Automobiles Private Limited</h5>    
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa-solid fa-phone"></i> +977-1234567890</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Mandatory Footer Elements -->
+        <div class="bg-danger text-light text-center py-2">
+            <p>&copy; 2023 Tripathi and Brothers Automobiles Private Limited</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-c6/1VW0YqzJNU5SOoPRgaOZff5gj0TRG7fFzU"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,240 @@
+*{
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Open Sans', sans-serif
+}
+
+
+/* Brand Slider */
+/* .scroller {
+    max-width: 600px;
+  } */
+  
+  .scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  }
+  
+  .scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+    
+  .scroller[data-speed="fast"] {
+    --_animation-duration: 25s;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+  .tag-list {
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+  }
+  
+  .tag-list li {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem -0.25rem #f000ff;
+  }
+
+  /* Filter Box */
+.container-box {
+  border: 1px solid #ccc;
+  color:whitesmoke;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  background: rgb(226,15,59);
+  background: linear-gradient(90deg, rgba(226,15,59,1) 3%, rgba(225,15,59,1) 4%, rgba(223,15,59,1) 6%, rgba(221,15,58,1) 8%, rgba(177,11,46,0.5026380180978641) 54%, rgba(177,11,46,0.9059993626356793) 74%, rgba(177,11,46,0.9059993626356793) 97%);
+}
+/* Custom styles for dropdown items */
+.custom-dropdown .dropdown-menu {
+  
+  background-color: #007BFF; /* Dark blue background */
+}
+
+.custom-dropdown .dropdown-item {
+  color: #ffffff; /* White text color */
+}
+
+/* Product Card */
+        /* Custom CSS for the product card container */
+        .product-card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        /* Custom CSS for the product card */
+        .product-card {
+            background: whitesmoke;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        /* Set a fixed height for product images */
+        .product-image {
+          width: 100%;
+          height: 200px; /* Adjust the height as needed to make all images the same size */
+          object-fit: cover; /* Maintain aspect ratio and cover the entire box */
+        }
+
+        .product-title {
+            font-weight: bold;
+            color: black;
+            margin-top: 10px;
+        }
+
+        .product-brand {
+            color: red;
+            font-size: 12px;
+        }
+
+        .product-price {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .product-details {
+            margin-top: 10px;
+        }
+
+        .product-icons i {
+            margin-right: 5px;
+            color: red;
+        }
+
+        .product-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .enquiry-button, .details-button {
+            flex: 1;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+    .product-icons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .icon i {
+        margin-right: 5px;
+        font-size: 1.2em;
+    }
+
+    @media (max-width: 768px) {
+        .icon {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .icon i {
+            margin: 5px 0;
+        }
+    }
+
+a{
+  text-decoration: none;
+}
+
+/* Car Details  */
+
+/* Image Container */
+.rounded-container {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  padding: 20px;
+}
+.rounded-container img {
+  max-width: 100%;
+  height: 500px;
+}
+
+/* Summary Box */
+
+.rounded-container-right {
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  overflow: auto; /* Enable scrolling if content overflows */
+}
+
+/* Car Overview Box */
+
+.btn-link{
+  text-decoration: none;
+  color: black;
+}
+.card-body ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Flexbox for displaying two feature values in one row */
+.responsive-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.responsive-list li {
+  flex: 1;
+  margin-right: 10px; /* Add margin between items for spacing */
+}
+
+/* Adjust the width for smaller screens */
+@media (max-width: 768px) {
+  .responsive-list li {
+      flex: 0 0 100%; /* Take full width on smaller screens */
+      margin-right: 0;
+  }
+}
+
+
+
+
+
