@@ -32,7 +32,7 @@ function sendMessengerMessage() {
   // Check if a product title is found
   if (productTitle) {
       var message = 'I am interested in the following car:\n' + productTitle;
-      var pageId = 100071130524133; // Replace with your Facebook page ID
+      var pageId = 100087194242853; // Replace with your Facebook page ID
 
       // Construct the Messenger link
       var messengerLink = 'https://www.messenger.com/t/' + pageId + '?text=' + encodeURIComponent(message);
@@ -50,7 +50,7 @@ function sendWhatsAppMessage() {
 
   // Check if a product title is found
   if (productTitle) {
-      var phoneNumber = '+9779849816678'; // Replace with the actual phone number
+      var phoneNumber = +9779851351923; // Replace with the actual phone number
       var message = 'I am interested in the following car: ' + productTitle;
 
       // Construct the WhatsApp link
